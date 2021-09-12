@@ -13,15 +13,15 @@
 
 int main() {
     int num;
-    std::cout << "Please enter an integer:" << std::endl;
+    std::cout << "Please enter an integer: ";
     std::cin >> num;
 
     while(num <= 0 || num >= 100) {
-        std::cout << "Please re-enter:" << std::endl;
+        std::cout << "Please re-enter: ";
         std::cin >> num;
     }
     if(num > 0 && num < 100) {
-        std::cout << num*num << std::endl;
+        std::cout << "Number squared is " << num*num << std::endl;
     }
     
     return 0;
